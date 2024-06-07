@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Individualização</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container m-4">
+        <h1>API Individualização</h1>
+
+        <h2>Resultados:</h2>
+        <br>
+        <p>Individualização do FGTS: <span id="fgts_value">{{ fgts_value }}</span></p>
+        <p>Individualização do PGFN: <span id="pgfn_value">{{ pgfn_value }}</span></p>
+
+        <p>Saldo FGTS: <span>{{ saldo_fgts }}</span></p>
+        <p>Meses Trabalhados: <span>{{ meses_trabalhados }}</span></p>
+        <p>Dívida PGFN: <span>{{ divida_pgfn }}</span></p>
+        <p>Meses em Dívida: <span>{{ meses_em_divida }}</span></p>
+
+    </div>
+
+    <!-- Bootstrap JS (opcional, se necessário) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>  
+</body>
+</html>
