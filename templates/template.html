@@ -3,27 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Individualização</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Resultados</title>
+
+    <!-- Adicionando Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container m-4">
-        <h1>API Individualização</h1>
+        <h1 class="mt-5">Resultados da Individualização de FGTS e PGFN</h1>
 
-        <h2>Resultados:</h2>
-        <br>
-        <p>Individualização do FGTS: <span id="fgts_value">{{ fgts_value }}</span></p>
-        <p>Individualização do PGFN: <span id="pgfn_value">{{ pgfn_value }}</span></p>
-
-        <p>Saldo FGTS: <span>{{ saldo_fgts }}</span></p>
-        <p>Meses Trabalhados: <span>{{ meses_trabalhados }}</span></p>
-        <p>Dívida PGFN: <span>{{ divida_pgfn }}</span></p>
-        <p>Meses em Dívida: <span>{{ meses_em_divida }}</span></p>
-
+        <table class="table mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Saldo FGTS</td>
+                    <td>{{ saldo_fgts }}</td>
+                </tr>
+                <tr>
+                    <td>Meses Trabalhados</td>
+                    <td>{{ meses_trabalhados }}</td>
+                </tr>
+                <tr>
+                    <td>Individualização FGTS</td>
+                    <td>{{ fgts_value }}</td>
+                </tr>
+                <tr>
+                    <td>Dívida PGFN</td>
+                    <td>{{ divida_pgfn }}</td>
+                </tr>
+                <tr>
+                    <td>Meses em Dívida PGFN</td>
+                    <td>{{ meses_em_divida }}</td>
+                </tr>
+                <tr>
+                    <td>Individualização PGFN</td>
+                    <td>{{ pgfn_value }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <!-- Bootstrap JS (opcional, se necessário) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>  
+    <!-- Adicionando Bootstrap JS e jQuery (opcional, se necessário) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
